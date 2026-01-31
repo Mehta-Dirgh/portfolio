@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cbd5f5;
+    }
+
+    .links a {
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #7dd3fc;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 5px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Your Full Name</h1>
+    <p>BTech Mechanical Engineering | IoT Minor | CAD | Robotics</p>
+    <div class="links">
+      <a href="resume.pdf" download>Download Resume</a>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="mailto:yourmail@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Mechanical Engineering undergraduate with a minor specialization in IoT.
+        I have strong interests in product design, CAD modeling, and hardware-based IoT projects.
+        I actively participate in technical competitions, workshops, and club activities related
+        to robotics and automation.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="card">
+      <img src="images/parking.jpg" alt="Smart Parking Project" />
+      <h3>Smart Parking Management System</h3>
+      <p>
+        IoT-based parking system using ESP32 that calculates parking duration, charges toll
+        accordingly, and sends notifications when a vehicle enters the parking zone.
+      </p>
+      <div class="tags">
+        <span>ESP32</span>
+        <span>IoT</span>
+        <span>Embedded Systems</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/farming.jpg" alt="Vertical Farming Robot" />
+      <h3>Vertical Farming Robot (Competition Project)</h3>
+      <p>
+        Designed a robotic system for small-scale farmers to sow seeds, monitor plant health,
+        and harvest crops with IoT-based monitoring support.
+      </p>
+      <div class="tags">
+        <span>Robotics</span>
+        <span>SolidWorks</span>
+        <span>IoT</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Internships & Experience</h2>
+
+    <div class="card">
+      <h3>NGO Internship – Parevda Group</h3>
+      <p>
+        Worked on rural development initiatives and supported welfare activities involving
+        healthcare instruments and community outreach.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Robotics & Automation Club – Core Committee</h3>
+      <p>
+        Contributed to technical planning, documentation, and execution of robotics workshops
+        and competitions.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <h2>Certifications & Workshops</h2>
+    <div class="card">
+      <ul>
+        <li>Automation with Python Workshop</li>
+        <li>DOE Skills for Engineers</li>
+        <li>Robot.py Workshop</li>
+        <li>Expert Lecture on Robotic Motion Planning</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>BTech Mechanical Engineering</strong> – CGPA: XX.XX</p>
+      <p><strong>Class 12</strong> – Percentage: XX%</p>
+      <p><strong>Class 10</strong> – Percentage: XX%</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: yourmail@gmail.com</p>
+      <p>Phone: +91-XXXXXXXXXX</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">View Profile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name | Built with ❤️</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const reveal = () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          sec.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', reveal);
+    reveal();
+  </script>
+</body>
+</html>
